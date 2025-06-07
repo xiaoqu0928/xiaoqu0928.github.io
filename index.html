@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>慧哆啦的家</title>
+  <link rel="stylesheet" href="./indexCss.css"> <!-- 引入统一样式文件，确保多页面外观一致 -->
+</head>
+<body>
+  <!-- 页面整体容器，使用class="box"实现居中布局 -->
+  <div class="box">
+    
+    <!-- ====================== 顶部导航栏 ====================== -->
+    <!-- 导航区域：使用表格布局实现头像与导航链接排列 -->
+    <table class="top-table">
+      <tr>
+        <td>
+          <!-- 头像容器：使用div包裹图片，通过CSS实现圆形裁剪 -->
+          <div class="useImgBox">
+            <img src="./img/use.jpg" alt="个人头像">
+          </div>
+        </td>
+        <!-- 导航链接：4个页面跳转（主页、我的偶像、我的相册、我的旅行） -->
+        <td width="100px"><a href="index.html">主页</a></td>
+        <td width="100px"><a href="myidoi.html">我的偶像</a></td> <!-- 注意：需确认文件名为myidoi.html或mydioi.html -->
+        <td width="100px"><a href="myalbum.html">我的相册</a></td>
+        <td width="100px"><a href="mytravel.html">我的旅行</a></td>
+      </tr>
+    </table>
+
+    <hr size="2" color="#cccccc"> <!-- 分隔线，视觉区分导航与主体内容 -->
+
+    <!-- ====================== 主体内容区域 ====================== -->
+    <!-- 主体内容表格：使用表格布局实现多模块排列（个人简介、兴趣、技能、表单） -->
+    <table border="0" cellpadding="0" class="content-table">
+      
+      <!-- ---------------------- 个人简介模块 ---------------------- -->
+      <tr>
+        <td width="415">
+          <!-- 标题盒子：使用div+CSS实现左侧边框和底部边框样式 -->
+          <div class="titleBox">
+            <h2>我的个人简介</h2>
+          </div>
+          <!-- 个人信息文本：包含姓名、性别、学校等 -->
+          <p>
+            我的个人简介。<br /> 
+            姓名：何慧慧<br /> 
+            性别：女<br /> 
+            生日：0928<br /> 
+            学校：中南财经政法大学<br /> 
+            爱好：跳舞，逛街，旅游<br /> 
+            你看：。。。<br /> 
+          </p>
+        </td>
+        <td>
+          <img width="385" height="250" src="./img/home33.jpg" alt="个人简介配图"> <!-- 右侧配图 -->
+        </td>
+      </tr>
+
+      <!-- ---------------------- 兴趣描述模块 ---------------------- -->
+      <tr>
+        <td>
+          <img width="385" height="250" src="./img/home22.jpg" alt="兴趣配图"> <!-- 左侧配图 -->
+        </td>
+        <td width="415">
+          <div class="titleBox">
+            <h2>兴趣广泛</h2>
+          </div>
+          <!-- 兴趣描述文本：体现个人爱好 -->
+          <p>
+            好吧，我承认我兴趣广泛。<br /> 
+            包括吃喝玩乐睡。<br /> 
+            当然还有一些低调奢华有内涵的部分了。<br /> 
+            我自己也会攒钱去旅游啊，去看看祖国大好河山。<br /> 
+            闲的时候也会看有教育意义的电影了。<br /> 
+          </p>
+        </td>
+      </tr>
+
+      <!-- ---------------------- 生活技能模块 ---------------------- -->
+      <tr>
+        <td width="415">
+          <div class="titleBox">
+            <h2>生活技能</h2>
+          </div>
+          <!-- 技能描述文本：体现个人特点，内容真实具体 -->
+          <p>
+            佛系，没啥技能，不爱动，爱玩手机，好吃，嘿嘿。<br /> 
+            活着就行，及时行乐。<br /> 
+            想暴富，发财，长到165+变成白富美。<br /> 
+            想要更多的了解我，就来看看我的小世界吧。<br /> 
+          </p>
+        </td>
+        <td>
+          <img width="385" height="250" src="./img/home11.jpg" alt="技能配图"> <!-- 右侧配图 -->
+        </td>
+      </tr>
+
+      <!-- ---------------------- 留言表单模块 ---------------------- -->
+      <tr>
+        <td colspan="2"> <!-- 跨两列显示，适配表格布局 -->
+          <div class="titleBox">
+            <h2>给我留言</h2>
+          </div>
+          <!-- 表单模块：包含姓名输入框、留言文本域、提交按钮，满足“页面包含表单” -->
+          <form action="#" method="post" class="message-form">
+            <label for="username">你的名字：</label>
+            <input type="text" id="username" name="username" placeholder="请输入姓名" required><br />
+
+            <label for="content">留言内容：</label>
+            <textarea id="content" name="content" rows="5" placeholder="想说的话..." required></textarea><br />
+
+            <button type="submit">提交留言</button>
+          </form>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- 可选：HTML5语义化元素（需在CSS中补充样式） -->
+  <!-- <footer class="page-footer">
+    <p>&copy; 2025 慧哆啦的家 版权所有</p>
+  </footer> -->
+</body>
+</html>

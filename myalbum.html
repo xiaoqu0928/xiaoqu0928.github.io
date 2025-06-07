@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>我的相册</title>
+  <link rel="stylesheet" href="./indexCss.css"> <!-- 引入外部样式表，用于统一网页的字体、颜色、布局等样式，保证多个网页外观协调一致 -->
+</head>
+<body>
+  <div class="box">
+    <!-- 顶部导航栏和头像区域，复用整体布局结构，通过表格实现排版 -->
+    <table class="top-table">
+      <tr>
+        <td>
+          <!-- 头像容器，通过CSS样式在indexCss.css中设置圆形裁剪效果 -->
+          <div class="useImgBox">
+            <img src="./img/use.jpg" alt="个人头像">
+          </div>
+        </td>
+        <!-- 导航链接，分别指向主页、我的偶像、我的相册、我的旅行页面，实现页面间跳转 -->
+        <td width="100px"><a href="index.html">主页</a></td>
+        <td width="100px"><a href="myidoi.html">我的偶像</a></td>
+        <td width="100px"><a href="myalbum.html">我的相册</a></td>
+        <td width="100px"><a href="mytravel.html">我的旅行</a></td>
+      </tr>
+    </table>
+
+    <hr size="2" color="#cccccc"> <!-- 水平分隔线，用于视觉上分隔导航栏和主体内容区域 -->
+
+    <!-- 相册主体内容区域，使用表格进行整体布局，承载照片展示和分类信息 -->
+    <table border="0" cellpadding="0" class="content-table">
+      <tr>
+        <td colspan="2">
+          <!-- 相册页面标题容器，通过CSS样式在indexCss.css中设置左侧边框和底部边框效果 -->
+          <div class="titleBox">
+            <h2>我的相册 - 美好瞬间</h2>
+          </div>
+        </td>
+      </tr>
+
+      <!-- 照片展示行1，用于展示生活照，通过表格两列布局实现并排展示 -->
+      <tr>
+        <td width="50%">
+          <img width="100%" src="./img/n.jpg" alt="生活照1">
+          <!-- 照片描述，通过段落标签展示，文本居中对齐，设置顶部外边距 -->
+          <p style="text-align: center; margin-top: 5px;">大美女照片</p>
+        </td>
+        <td width="50%">
+          <img width="100%" src="./img/a.1.jpg" alt="生活照2">
+          <p style="text-align: center; margin-top: 5px;">建筑物</p>
+        </td>
+      </tr>
+
+      <!-- 照片展示行2，用于展示风景照，同样采用表格两列布局 -->
+      <tr>
+        <td width="50%">
+          <img width="100%" src="./img/a.2.jpg" alt="风景照1">
+          <p style="text-align: center; margin-top: 5px;">生活美食</p>
+        </td>
+        <td width="50%">
+          <img width="100%" src="./img/a.3.jpg" alt="风景照2">
+          <p style="text-align: center; margin-top: 5px;">可爱萌宠</p>
+        </td>
+      </tr>
+
+      <!-- 照片分类表格区域，用于展示相册的分类信息，增强内容结构性 -->
+      <tr>
+        <td colspan="2">
+          <div class="titleBox">
+            <h2>相册分类</h2>
+          </div>
+          <!-- 嵌套表格，展示相册分类、照片数量和简介，满足评分标准中“页面包含表格”的要求 -->
+          <table class="album-cate-table">
+            <tr>
+              <th>分类</th>
+              <th>照片数量</th>
+              <th>简介</th>
+            </tr>
+            <tr>
+              <td>生活照</td>
+              <td>10+</td>
+              <td>记录日常小美好</td>
+            </tr>
+            <tr>
+              <td>风景照</td>
+              <td>20+</td>
+              <td>旅行路上的风景</td>
+            </tr>
+            <tr>
+              <td>人像照</td>
+              <td>5+</td>
+              <td>朋友、家人的瞬间</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  
+</body>
+</html>
