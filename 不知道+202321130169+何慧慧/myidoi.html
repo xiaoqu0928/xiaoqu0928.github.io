@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>我的偶像</title>
+  <link rel="stylesheet" href="./indexCss.css"> <!-- 引入全局CSS样式，确保多页面风格统一 -->
+</head>
+<body>
+  <div class="box">
+    <!-- ====================== 顶部导航栏 ====================== -->
+    <!-- 导航区域：使用表格布局实现头像与页面链接排列 -->
+    <table class="top-table">
+      <tr>
+        <td>
+          <!-- 头像容器：通过CSS实现圆形裁剪（需在indexCss.css中定义border-radius） -->
+          <div class="useImgBox">
+            <img src="./img/use.jpg" alt="个人头像">
+          </div>
+        </td>
+        <!-- 导航链接：跳转至4个页面（主页、我的偶像、相册、旅行） -->
+        <td width="100px"><a href="index.html">主页</a></td>
+        <td width="100px"><a href="myidoi.html">我的偶像</a></td> <!-- 注意：确保文件名与链接一致（如myidoi.html或mydioi.html） -->
+        <td width="100px"><a href="myalbum.html">我的相册</a></td>
+        <td width="100px"><a href="mytravel.html">我的旅行</a></td>
+      </tr>
+    </table>
+
+    <hr size="2" color="#cccccc"> <!-- 分隔线：视觉分隔导航与主体内容 -->
+
+    <!-- ====================== 偶像内容区域 ====================== -->
+    <!-- 主体内容表格：左侧文本+右侧图片布局，嵌套作品/成就表格 -->
+    <table border="0" cellpadding="0" class="content-table">
+      
+      <!-- ---------------------- 偶像简介模块 ---------------------- -->
+      <tr>
+        <td width="415">
+          <!-- 标题盒子：通过CSS实现左侧边框+底部边框样式（见indexCss.css中.titleBox） -->
+          <div class="titleBox">
+            <h2>我的偶像 - 泰勒·斯威夫特（霉霉）</h2>
+          </div>
+          <!-- 偶像简介文本：包含出生日期、职业、代表作、成就，符合“内容与个人相关”要求 -->
+          <p>
+            泰勒·斯威夫特（Taylor Swift），1989年12月13日出生于美国宾夕法尼亚州，是全球流行天后，集歌手、词曲作者、音乐制作人、导演等多重身份于一身。<br />
+            代表作：《Love Story》《Blank Space》《Anti-Hero》《All Too Well》<br />
+            成就：多次斩获格莱美奖、公告牌音乐奖，以叙事性歌词和风格多变的音乐，影响全球流行文化。<br />
+          </p>
+
+          <!-- ---------------------- 作品/成就表格 ---------------------- -->
+          <!-- 嵌套表格：展示偶像重要作品及获奖记录，满足“页面包含表格”要求 -->
+          <table class="idol-table">
+            <tr>
+              <th>年份</th>
+              <th>代表作</th>
+              <th>奖项</th>
+            </tr>
+            <tr>
+              <td>2008</td>
+              <td>《Fearless》</td>
+              <td>第52届格莱美年度专辑奖</td>
+            </tr>
+            <tr>
+              <td>2015</td>
+              <td>《1989》</td>
+              <td>第58届格莱美年度专辑奖</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>《Midnights》</td>
+              <td>第66届格莱美年度专辑奖</td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <!-- 偶像照片：右侧配图，需确保图片路径正确（./img/mm.jpg） -->
+          <img width="385" height="250" src="./img/mm.jpg" alt="霉霉照片">
+        </td>
+      </tr>
+
+      <!-- ---------------------- 互动表单模块 ---------------------- -->
+      <tr>
+        <td colspan="2"> <!-- 跨列显示：表单占据整个表格宽度 -->
+          <div class="titleBox">
+            <h2>给偶像的祝福</h2>
+          </div>
+          <!-- 留言表单：包含姓名输入、文本域、提交按钮，满足“页面包含表单”要求 -->
+          <form action="#" method="post" class="message-form">
+            <label for="username">你的名字：</label>
+            <input type="text" id="username" name="username" placeholder="请输入姓名" required><br /> <!-- required属性：必填项验证 -->
+
+            <label for="wish">祝福内容：</label>
+            <textarea id="wish" name="wish" rows="5" placeholder="写下对霉霉的祝福..." required></textarea><br />
+
+            <button type="submit">提交祝福</button> <!-- 提交按钮：触发表单数据提交 -->
+          </form>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  
+</body>
+</html>

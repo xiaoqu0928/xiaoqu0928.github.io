@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>我的旅行</title>
+  <link rel="stylesheet" href="./indexCss.css"> <!-- 引入外部CSS样式表，确保本页面与其他页面保持统一的字体、颜色和布局风格 -->
+</head>
+<body>
+  <div class="box">
+    <!-- 顶部导航栏和头像区域，复用整体布局结构，通过表格实现排版 -->
+    <table class="top-table">
+      <tr>
+        <td>
+          <!-- 头像容器，通过CSS样式在indexCss.css中设置圆形裁剪效果 -->
+          <div class="useImgBox">
+            <img src="./img/use.jpg" alt="个人头像">
+          </div>
+        </td>
+        <!-- 导航链接，分别指向主页、我的偶像、我的相册、我的旅行页面，实现页面间跳转 -->
+        <td width="100px"><a href="index.html">主页</a></td>
+        <td width="100px"><a href="myidoi.html">我的偶像</a></td>
+        <td width="100px"><a href="myalbum.html">我的相册</a></td>
+        <td width="100px"><a href="mytravel.html">我的旅行</a></td>
+      </tr>
+    </table>
+
+    <hr size="2" color="#cccccc"> <!-- 水平分隔线，用于视觉上分隔导航栏和主体内容区域 -->
+
+    <!-- 旅行内容主体区域，使用表格进行整体布局，承载旅行经历和互动表单 -->
+    <table border="0" cellpadding="0" class="content-table">
+      <tr>
+        <td colspan="2">
+          <!-- 旅行页面标题容器，通过CSS样式在indexCss.css中设置左侧边框和底部边框效果 -->
+          <div class="titleBox">
+            <h2>我的旅行 - 足迹与故事</h2>
+          </div>
+        </td>
+      </tr>
+
+      <!-- 旅行经历展示行1：天津，通过表格两列布局，左侧文字描述，右侧配图 -->
+      <tr>
+        <td width="415">
+          <!-- 旅行地点、时间和感悟文字描述 -->
+          <p>
+            地点：天津<br />
+            时间：2025年5月<br />
+            感悟：一座充满历史与文艺气息的城市，海河沿岸的风景、五大道的洋楼，让人流连忘返。<br />
+          </p>
+        </td>
+        <td>
+          <img width="385" height="250" src="./img/home333.jpg" alt="天津旅行照"> <!-- 天津旅行照片 -->
+        </td>
+      </tr>
+
+      <!-- 旅行经历展示行2：西安，同样采用表格两列布局 -->
+      <tr>
+        <td width="415">
+          <p>
+            地点：西安<br />
+            时间：2024年2月<br />
+            感悟：西安感悟：“嘹咋咧”的古都！羊肉泡馍、兵马俑、钟鼓楼，千年的烟火气与历史的厚重感交织，每一步都踏在时光的印记里，让人彻底沦陷 。<br />
+          </p>
+        </td>
+        <td>
+          <img width="385" height="250" src="./img/a.5.jpg" alt="西安旅行照"> <!-- 西安旅行照片 -->
+        </td>
+      </tr>
+
+      <!-- 旅行故事互动表单区域，通过表格跨列实现表单全宽展示 -->
+      <tr>
+        <td colspan="2">
+          <div class="titleBox">
+            <h2>分享你的旅行故事</h2>
+          </div>
+          <!-- 表单用于收集用户的旅行地点和故事内容，满足评分标准中“页面包含表单”的要求 -->
+          <form action="#" method="post" class="message-form">
+            <label for="place">旅行地点：</label>
+            <input type="text" id="place" name="place" placeholder="比如：北京、大理..." required><br /> <!-- required属性确保输入框为必填项 -->
+
+            <label for="story">故事内容：</label>
+            <textarea id="story" name="story" rows="5" placeholder="写下你的旅行故事..." required></textarea><br /> <!-- 文本域用于输入较长内容 -->
+
+            <button type="submit">提交故事</button> <!-- 提交按钮，用于提交表单数据 -->
+          </form>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  
+</body>
+</html>

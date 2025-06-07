@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('./img/bgimg.png.jpg');
+  background-size: 100%;
+  font-family: '宋体';
+  line-height: 30px;
+}
+
+.box {
+  width: 800px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px 0;
+}
+
+/* 头像容器样式 */
+.useImgBox {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.useImgBox img {
+  width: 50px;
+}
+
+/* 标题盒子样式 */
+.titleBox {
+  width: 570px;
+  border-left: 10px solid;
+  border-bottom: 1px solid;
+  padding-left: 8px;
+  margin: 10px;
+  color: #AD5A5A;
+}
+
+.titleBox h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* 顶部导航表格样式 */
+.top-table {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.top-table a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* 主体内容表格样式 */
+.content-table {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content-table td {
+  vertical-align: top;
+  padding: 10px;
+}
+
+/* 表单样式 */
+.message-form {
+  margin: 10px;
+}
+
+.message-form label {
+  display: inline-block;
+  width: 80px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.message-form input,
+.message-form textarea {
+  width: 60%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.message-form button {
+  padding: 8px 20px;
+  background-color: #AD5A5A;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 90px; /* 和标签对齐 */
+}
+/* 偶像页面 - 作品表格 */
+.idol-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.idol-table th,
+.idol-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.idol-table th {
+  background-color: #f8f8f8;
+}
+
+/* 相册页面 - 分类表格 */
+.album-cate-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.album-cate-table th,
+.album-cate-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.album-cate-table th {
+  background-color: #f8f8f8;
+}
