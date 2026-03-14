@@ -1,1 +1,0 @@
-import{n as o}from"./index-0d0d8a69.js";const n=o("admin",{state:()=>({token:localStorage.getItem("adminToken")||""}),actions:{setToken(e){this.token=e,localStorage.setItem("adminToken",e)},logout(){this.token="",localStorage.removeItem("adminToken")}}});export{n as u};
