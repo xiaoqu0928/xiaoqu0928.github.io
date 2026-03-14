@@ -1,1 +1,0 @@
-import{n as t}from"./index-d23267c7.js";const r=t("teacher",{state:()=>({token:localStorage.getItem("teacherToken")||"",userInfo:null}),actions:{setToken(e){this.token=e,localStorage.setItem("teacherToken",e)},setUserInfo(e){this.userInfo=e},logout(){this.token="",this.userInfo=null,localStorage.removeItem("teacherToken")}}});export{r as u};
